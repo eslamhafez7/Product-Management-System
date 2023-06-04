@@ -57,7 +57,7 @@ let tmp;
         && price.value != ""
         && category.value != ""
         && newPro.count < 101) {
-              if(mood === "create") { 
+            if(mood === "create") { 
 
                 if(newPro.count > 1) {
                     for(let i = 0; i < newPro.count; i++) {
@@ -74,7 +74,6 @@ let tmp;
             }
             clearData()
         }
-       
         // Save localstorage
         localStorage.setItem('product', JSON.stringify(dataPro));
 
